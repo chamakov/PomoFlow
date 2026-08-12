@@ -16,8 +16,9 @@ struct HelpView: View {
                     Text("1. Use the menu bar icon to quickly start or stop tasks.")
                     Text("2. Open the main window from the menu bar to manage projects and tasks.")
                     Text("3. Add projects and their hourly rates.")
-                    Text("4. View your total earnings and time spent in the Reports tab.")
+                    Text("4. View your total earnings and time spent in the Reports tab. Click the blue export icon to save a CSV.")
                     Text("5. Set up global keyboard shortcuts in the Preferences.")
+                    Text("6. Enable 'Strict Focus Mode' in Settings > Advanced to automatically hide other apps when focusing.")
                 }
                 
                 Group {
