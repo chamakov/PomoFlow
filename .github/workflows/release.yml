@@ -1,0 +1,35 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*' # Trigger this workflow on version tags, e.g., v1.0.0
+
+jobs:
+  build:
+    name: Build macOS DMG
+    runs-on: macos-latest
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        
+      - name: Set up Swift
+        uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: '5.10'
+          
+      - name: Build Application Bundle
+        run: |
+          chmod +x ./Scripts/package_app.sh
+          ./Scripts/package_app.sh release
+          
+      - name: Create DMG Disk Image
+        run: |
+          hdiutil create -volname "TimeTracker" -srcfolder TimeTracker.app -ov -format UDZO TimeTracker.dmg
+          
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: TimeTracker.dmg
+          generate_release_notes: true
