@@ -1,0 +1,26 @@
+# SwiftPM
+.build/
+.swiftpm/
+
+# Xcode
+*.xcodeproj
+*.xcworkspace
+xcuserdata/
+DerivedData/
+
+# App packaging
+*.app/
+*.dmg
+*.zip
+*.tar.gz
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# IDEs
+.idea/
+*.swp
+*~
