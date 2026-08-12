@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/icon.jpg" alt="PomoFlow Icon" width="128" />
+  <img src="assets/icon_3d.jpg" alt="PomoFlow Icon" width="128" />
   
   # PomoFlow for macOS
   
