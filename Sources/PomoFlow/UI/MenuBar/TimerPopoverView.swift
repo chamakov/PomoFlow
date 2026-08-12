@@ -15,7 +15,7 @@ public struct TimerPopoverView: View {
         VStack(spacing: 0) {
             // Header
             HStack {
-                Text("Time Tracker")
+                Text("PomoFlow")
                     .font(.headline)
                 Spacer()
                 

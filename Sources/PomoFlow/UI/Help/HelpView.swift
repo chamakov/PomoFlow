@@ -4,12 +4,12 @@ struct HelpView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                Text("Time Tracker Help")
+                Text("PomoFlow Help")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 
                 Group {
-                    Text("How to use Time Tracker")
+                    Text("How to use PomoFlow")
                         .font(.title2)
                         .fontWeight(.semibold)
                     

@@ -73,7 +73,7 @@ struct PomoFlowApp: App {
         }
         .menuBarExtraStyle(.window)
 
-        Window("Time Tracker", id: "main") {
+        Window("PomoFlow", id: "main") {
             MainWindowView()
                 .environment(store)
         }
@@ -83,12 +83,12 @@ struct PomoFlowApp: App {
             SettingsView()
         }
         
-        Window("Time Tracker Help", id: "help") {
+        Window("PomoFlow Help", id: "help") {
             HelpView()
         }
         .commands {
             CommandGroup(replacing: .help) {
-                Button("Time Tracker Help") {
+                Button("PomoFlow Help") {
                     openWindow(id: "help")
                 }
             }

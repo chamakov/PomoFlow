@@ -21,7 +21,7 @@ public struct MainWindowView: View {
                     Label("Settings", systemImage: "gearshape")
                 }
             }
-            .navigationTitle("Time Tracker")
+            .navigationTitle("PomoFlow")
         } detail: {
             switch store.selectedTab {
             case .projects:
