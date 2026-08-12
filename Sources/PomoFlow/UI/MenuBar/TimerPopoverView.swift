@@ -1,7 +1,7 @@
 import SwiftUI
 
 public struct TimerPopoverView: View {
-    @Environment(TimeTrackerStore.self) private var store
+    @Environment(PomoFlowStore.self) private var store
 
     @Environment(\.openWindow) private var openWindow
     @Environment(\.openSettings) private var openSettings

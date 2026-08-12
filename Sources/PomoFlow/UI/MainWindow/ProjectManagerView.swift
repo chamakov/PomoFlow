@@ -1,7 +1,7 @@
 import SwiftUI
 
 public struct ProjectManagerView: View {
-    @Environment(TimeTrackerStore.self) private var store
+    @Environment(PomoFlowStore.self) private var store
     
     @State private var selectedProjectID: UUID?
     

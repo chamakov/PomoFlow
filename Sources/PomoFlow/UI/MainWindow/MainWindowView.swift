@@ -1,7 +1,7 @@
 import SwiftUI
 
 public struct MainWindowView: View {
-    @Environment(TimeTrackerStore.self) private var store
+    @Environment(PomoFlowStore.self) private var store
     @Environment(\.openWindow) private var openWindow
     
     public init() {}

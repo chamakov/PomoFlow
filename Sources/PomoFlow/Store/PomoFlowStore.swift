@@ -11,7 +11,7 @@ public enum AppScreen: Hashable {
 
 @MainActor
 @Observable
-public class TimeTrackerStore {
+public class PomoFlowStore {
     public var projects: [Project] = []
     public var selectedTab: AppScreen = .projects
     public var activeProjectID: UUID?

@@ -1,6 +1,6 @@
-# TimeTracker for macOS
+# PomoFlow for macOS
 
-**TimeTracker** is an advanced, privacy-first, hybrid time tracking and Pomodoro application for macOS. Built entirely with SwiftUI and SwiftPM (no Xcode project files required!), it offers a premium glassmorphic interface alongside enterprise-level focus and security features.
+**PomoFlow** is an advanced, privacy-first, hybrid time tracking and Pomodoro application for macOS. Built entirely with SwiftUI and SwiftPM (no Xcode project files required!), it offers a premium glassmorphic interface alongside enterprise-level focus and security features.
 
 ## ✨ Key Features
 
@@ -14,7 +14,7 @@
 
 ## 🚀 Getting Started
 
-TimeTracker is built using the Swift Package Manager. You don't need to open Xcode to compile it; standard terminal commands are enough.
+PomoFlow is built using the Swift Package Manager. You don't need to open Xcode to compile it; standard terminal commands are enough.
 
 ### Prerequisites
 
@@ -27,8 +27,8 @@ We provide a convenient bash script to compile and run the application.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/TimeTracker.git
-cd TimeTracker
+git clone https://github.com/yourusername/PomoFlow.git
+cd PomoFlow
 
 # 2. Compile and run
 ./Scripts/compile_and_run.sh
@@ -36,18 +36,18 @@ cd TimeTracker
 
 ### Packaging for Release
 
-To create a release version (`TimeTracker.app`) that you can move to your `/Applications` folder:
+To create a release version (`PomoFlow.app`) that you can move to your `/Applications` folder:
 
 ```bash
 ./Scripts/package_app.sh release
 ```
 
-The script will generate a fully bundled `TimeTracker.app` in the root directory.
+The script will generate a fully bundled `PomoFlow.app` in the root directory.
 
 ## 🛠 Architecture
 
 * **SwiftUI:** The entire UI is built declaratively using modern SwiftUI (WindowGroups, MenuBarExtra, NavigationSplitView).
-* **Observation Framework:** State management is handled through the new `@Observable` macro via a central `TimeTrackerStore`.
+* **Observation Framework:** State management is handled through the new `@Observable` macro via a central `PomoFlowStore`.
 * **SwiftPM:** The project uses `Package.swift` instead of `.xcodeproj`. This keeps the repository clean, prevents merge conflicts on project files, and makes CI/CD a breeze.
 
 ## 🔒 Mac App Store & Sandboxing
@@ -59,7 +59,7 @@ If you intend to fork this project and submit it to the Mac App Store, please no
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check [issues page](https://github.com/yourusername/TimeTracker/issues).
+Feel free to check [issues page](https://github.com/yourusername/PomoFlow/issues).
 
 ## 📝 License
 

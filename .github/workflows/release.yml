@@ -26,10 +26,10 @@ jobs:
           
       - name: Create DMG Disk Image
         run: |
-          hdiutil create -volname "TimeTracker" -srcfolder TimeTracker.app -ov -format UDZO TimeTracker.dmg
+          hdiutil create -volname "PomoFlow" -srcfolder PomoFlow.app -ov -format UDZO PomoFlow.dmg
           
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: TimeTracker.dmg
+          files: PomoFlow.dmg
           generate_release_notes: true

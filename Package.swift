@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "TimeTracker",
+    name: "PomoFlow",
     platforms: [
         .macOS(.v14),
     ],
@@ -11,11 +11,11 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "TimeTracker",
+            name: "PomoFlow",
             dependencies: [
                 .product(name: "KeyboardShortcuts", package: "KeyboardShortcuts")
             ],
-            path: "Sources/TimeTracker",
+            path: "Sources/PomoFlow",
             resources: [
                 .process("Resources"),
             ])

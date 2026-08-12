@@ -3,7 +3,7 @@ import UniformTypeIdentifiers
 import Charts
 
 public struct ReportsView: View {
-    @Environment(TimeTrackerStore.self) private var store
+    @Environment(PomoFlowStore.self) private var store
     
     public init() {}
     

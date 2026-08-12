@@ -15,7 +15,7 @@ public actor StorageManager {
     
     private var applicationSupportDirectory: URL {
         let urls = fileManager.urls(for: .applicationSupportDirectory, in: .userDomainMask)
-        let appDir = urls[0].appendingPathComponent("TimeTracker", isDirectory: true)
+        let appDir = urls[0].appendingPathComponent("PomoFlow", isDirectory: true)
         
         if !fileManager.fileExists(atPath: appDir.path) {
             try? fileManager.createDirectory(at: appDir, withIntermediateDirectories: true, attributes: nil)

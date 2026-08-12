@@ -31,8 +31,8 @@ class WindowManager: NSObject {
 }
 
 @main
-struct TimeTrackerApp: App {
-    @State private var store = TimeTrackerStore()
+struct PomoFlowApp: App {
+    @State private var store = PomoFlowStore()
     @Environment(\.openWindow) private var openWindow
 
     var body: some Scene {
